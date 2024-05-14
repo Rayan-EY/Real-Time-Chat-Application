@@ -18,6 +18,6 @@ const messageSchema=new mongoose.Schema({
 
 }, { timestamps: true} )// to assign time of message sent in the db
 
-const Message=mongoose.Model("Message",messageSchema);
+const Message=mongoose.model("Message",messageSchema);
 
 export default Message;
