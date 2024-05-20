@@ -3,9 +3,9 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 export const signup=async (req,res)=>{
     try{
-        const {name,username,gender,password,confirmpassword}=req.body;
+        const {name,username,gender,password,confirmPassword}=req.body;
 
-        if(password!=confirmpassword){
+        if(password!=confirmPassword){
             return res.status(400).json({error:"Passwords dont match"})
         }
 
